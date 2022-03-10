@@ -20,8 +20,7 @@ public class Director extends AggregateEvent<DirectorId> {
             Nombre nombre,
             Apellido apellido,
             Email email,
-            Genero genero,
-            List<Funcion> funciones
+            Genero genero
     ) {
         super(entityId);
         appendChange(new DirectorCreado(
