@@ -4,11 +4,12 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.webSchoolddd.registro.Director.command.AgregarNuevaFuncion;
+import co.com.webSchoolddd.registro.Director.command.EliminarFuncion;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
 import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
+import co.com.webSchoolddd.registro.Director.event.FuncionRemovida;
 import co.com.webSchoolddd.registro.Director.value.*;
-import co.com.webSchoolddd.useCases.AgregarNuevaFuncionUseCase;
+import co.com.webSchoolddd.useCases.EliminarFuncionUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,29 +21,25 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
-public class AgregarNuevaFuncionUseCaseTest {
+public class EliminarFuncionUseCaseTest {
 
     @Mock
     private DomainEventRepository repository;
 
     @Test
-    @DisplayName("Testing AgregarNuevaFuncion")
-    void agregarFuncion() {
+    @DisplayName("Testing EliminarFuncion")
+    void eliminarFuncion() {
         //arrange
         DirectorId directorId = DirectorId.of("xxx");
-
         FuncionId funcionId = FuncionId.of("xxz");
-        Prioridad prioridad = new Prioridad(Prioridad.NivelPrioridad.ALTO);
-        Caracteristica caracteristica = new Caracteristica("Realizar nuevos cursos");
 
         //act
-        var command = new AgregarNuevaFuncion(
-                directorId,
+        var command = new EliminarFuncion(
                 funcionId,
-                prioridad,
-                caracteristica
+                directorId
         );
-        var usecase = new AgregarNuevaFuncionUseCase();
+        var usecase = new EliminarFuncionUseCase();
+
         Mockito.when(repository.getEventsBy("xxx")).thenReturn(history());
         usecase.addRepository(repository);
 
@@ -52,11 +49,11 @@ public class AgregarNuevaFuncionUseCaseTest {
                 .orElseThrow()
                 .getDomainEvents();
 
-
         //assert
-        var event = (FuncionAgregada)events.get(0);
-        Assertions.assertEquals("webSchoolddd.registro.director.funcionAgregada", event.type);
+        var event = (FuncionRemovida)events.get(0);
+        Assertions.assertEquals("webSchoolddd.registro.director.funcionRemovida", event.type);
         Assertions.assertEquals("xxz",event.getFuncionId().value());
+
     }
 
     private List<DomainEvent> history() {
@@ -71,8 +68,15 @@ public class AgregarNuevaFuncionUseCaseTest {
                         FuncionId.of("xxz"),
                         new Prioridad(Prioridad.NivelPrioridad.ALTO),
                         new Caracteristica("Realizar nuevos cursos")
+                ),
+                new FuncionAgregada(
+                        FuncionId.of("xxy"),
+                        new Prioridad(Prioridad.NivelPrioridad.ALTO),
+                        new Caracteristica("Realizar nuevos cursos")
+                ),
+                new FuncionRemovida(
+                        FuncionId.of("xxy")
                 )
         );
     }
-
 }
