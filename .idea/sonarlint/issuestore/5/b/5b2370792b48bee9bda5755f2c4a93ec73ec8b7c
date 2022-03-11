@@ -1,0 +1,6 @@
+
+M
+java:S2160"+Override the "equals" method in this class.(ª­ îÿÿÿÿÿ8±Ç€´÷/
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïòÌ¾8ÄÈ€´÷/
+o	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üóÌûÿÿÿÿ8ÆÈ€´÷/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’œÈˆ

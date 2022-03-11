@@ -16,7 +16,6 @@ public class DirectorCreado extends DomainEvent {
     private final Apellido apellido;
     private final Email email;
     private Genero genero;
-    private List<Funcion> funciones;
 
 
     public DirectorCreado(Nombre nombre, Apellido apellido, Email email, Genero genero) {
@@ -25,7 +24,6 @@ public class DirectorCreado extends DomainEvent {
         this.apellido = apellido;
         this.email = email;
         this.genero = genero;
-        this.funciones = new ArrayList<>();
     }
 
     public Nombre getNombre() {
@@ -44,7 +42,4 @@ public class DirectorCreado extends DomainEvent {
         return genero;
     }
 
-    public List<Funcion> getFunciones() {
-        return funciones;
-    }
 }

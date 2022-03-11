@@ -50,6 +50,22 @@ public class Director extends AggregateEvent<DirectorId> {
         appendChange(new FuncionAgregada(funcion));
     }
 
+    public void actualizarNombre(Nombre nombre) {
+      //TODO
+    }
+
+    public void actualizarApellido(Apellido apellido) {
+        //TODO
+    }
+
+    public void actualizarEmail(Email email) {
+       //TODO
+    }
+
+    public void actualizarGenero(Genero genero) {
+       //TODO
+    }
+
 
     //get
 
