@@ -26,9 +26,7 @@ public class Escuela extends AggregateEvent<EscuelaId> {
             DirectorId directorId,
             Nombre nombre,
             Blog blog,
-            Examen examen,
-            List<Reto> retos,
-            List<Curso> cursos
+            Examen examen
     ) {
         super(entityId);
         appendChange(new EscuelaCreada(
@@ -52,4 +50,31 @@ public class Escuela extends AggregateEvent<EscuelaId> {
     }
 
     //comportamientos
+
+
+    //accesos
+
+    public DirectorId directorId() {
+        return directorId;
+    }
+
+    public Nombre nombre() {
+        return nombre;
+    }
+
+    public Blog blog() {
+        return blog;
+    }
+
+    public Examen examen() {
+        return examen;
+    }
+
+    public List<Reto> retos() {
+        return retos;
+    }
+
+    public List<Curso> cursos() {
+        return cursos;
+    }
 }

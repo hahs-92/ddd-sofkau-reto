@@ -5,14 +5,8 @@ Esrc/main/java/co/com/webSchoolddd/registro/Director/valor/Genero.java,8/f/8fba
 Msrc/main/java/co/com/webSchoolddd/registro/Director/valor/Caracteristica.java,d/1/d134d81698ab19666092dbb000304852cbcf7d6d
 x
 Hsrc/main/java/co/com/webSchoolddd/registro/Director/valor/Prioridad.java,4/4/44a40f01423e9421ee621ad84b22114eb310eb19
-y
-Isrc/main/java/co/com/webSchoolddd/registro/Director/valor/DirectorId.java,c/2/c21c1c6165cca0fbe4cea3c4f72e6af3f3eba40c
-t
-Dsrc/main/java/co/com/webSchoolddd/useCases/CrearDirectorUseCase.java,3/f/3f1ea82365d96c313ab39e74ebfcce253685514f
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-Å
-Qsrc/test/java/co/com/webSchoolddd/registro/usecases/CrearDirectorUseCaseTest.java,c/f/cf63ee27fbefdc4a341af1c94dcd0a9cae1d0c83
 ~
 Nsrc/main/java/co/com/webSchoolddd/registro/Director/event/FuncionAgregada.java,d/f/df92212ac54b6f98061e621a5422ed7b22bff397
 x
@@ -33,8 +27,6 @@ w
 Gsrc/main/java/co/com/webSchoolddd/registro/Director/valor/Apellido.java,9/4/9456c500c2d5c1137ce79cbfb5b31a81536af9c7
 w
 Gsrc/main/java/co/com/webSchoolddd/registro/Director/entity/Funcion.java,5/b/5b2370792b48bee9bda5755f2c4a93ec73ec8b7c
-w
-Gsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/EscuelaId.java,d/6/d6a260449d2d1234c8b9d8c158385b8a4263e17e
 t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Curso.java,6/9/69cecc7d1e69ad385e25dcfcfe1f443d7dd992f3
 u
@@ -49,7 +41,5 @@ v
 Fsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/ExamenId.java,e/4/e438ce01e8db20b04700e1c391268a7ee98e30b9
 t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/RetoId.java,e/5/e57dc5fbc2cdec1e690292cf6f31306b165e04d6
-s
-Csrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Blog.java,e/7/e77a2fabec2d3144b7e2265fcde35e4d8e492e68
 s
 Csrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Reto.java,2/d/2d6194fac36862781ca34f731c26d2426cb260de

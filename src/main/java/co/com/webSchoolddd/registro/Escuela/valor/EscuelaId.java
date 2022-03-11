@@ -10,7 +10,7 @@ public class EscuelaId extends Identity {
 
     public EscuelaId() {}
 
-    private static EscuelaId of(String id) {
+    public static EscuelaId of(String id) {
         return new EscuelaId(id);
     }
 }

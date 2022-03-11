@@ -10,7 +10,7 @@ public class DirectorId extends Identity {
 
     public DirectorId() {}
 
-    private static DirectorId of(String id) {
+    public static DirectorId of(String id) {
         return  new DirectorId(id);
     }
 }
