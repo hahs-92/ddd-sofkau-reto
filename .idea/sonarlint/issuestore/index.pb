@@ -7,8 +7,6 @@ x
 Hsrc/main/java/co/com/webSchoolddd/registro/Director/valor/Prioridad.java,4/4/44a40f01423e9421ee621ad84b22114eb310eb19
 y
 Isrc/main/java/co/com/webSchoolddd/registro/Director/valor/DirectorId.java,c/2/c21c1c6165cca0fbe4cea3c4f72e6af3f3eba40c
-~
-Nsrc/main/java/co/com/webSchoolddd/registro/Director/command/CrearDirector.java,f/4/f442043a3ee54d91d26ec36686a182b82870d52a
 t
 Dsrc/main/java/co/com/webSchoolddd/useCases/CrearDirectorUseCase.java,3/f/3f1ea82365d96c313ab39e74ebfcce253685514f
 7

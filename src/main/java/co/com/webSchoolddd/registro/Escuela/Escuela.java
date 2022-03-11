@@ -7,6 +7,7 @@ import co.com.webSchoolddd.registro.Escuela.entity.Blog;
 import co.com.webSchoolddd.registro.Escuela.entity.Curso;
 import co.com.webSchoolddd.registro.Escuela.entity.Examen;
 import co.com.webSchoolddd.registro.Escuela.entity.Reto;
+import co.com.webSchoolddd.registro.Escuela.event.EscuelaCreada;
 import co.com.webSchoolddd.registro.Escuela.valor.EscuelaId;
 import co.com.webSchoolddd.registro.Escuela.valor.Nombre;
 
@@ -30,16 +31,18 @@ public class Escuela extends AggregateEvent<EscuelaId> {
             List<Curso> cursos
     ) {
         super(entityId);
-        this.directorId = directorId;
-        this.nombre = nombre;
-        this.blog = blog;
-        this.examen = examen;
-        this.retos = retos;
-        this.cursos = cursos;
+        appendChange(new EscuelaCreada(
+                nombre,
+                directorId,
+                examen,
+                blog
+        )).apply();
+        subscribe(new EscuelaEventChange(this));
     }
 
     private Escuela(EscuelaId escuelaId) {
         super(escuelaId);
+        subscribe(new EscuelaEventChange(this));
     }
 
     public static Escuela from(EscuelaId escuelaId, List<DomainEvent> events) {
