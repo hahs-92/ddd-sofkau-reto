@@ -48,6 +48,7 @@ public class Director extends AggregateEvent<DirectorId> {
 
 
     //comportamientos
+
     public void agregarFuncion(FuncionId funcionId, Prioridad prioridad, Caracteristica caracteristica) {
         appendChange(new FuncionAgregada(funcionId, prioridad, caracteristica));
     }
@@ -57,7 +58,6 @@ public class Director extends AggregateEvent<DirectorId> {
         Objects.requireNonNull(getFuncionById(funcionId));
         appendChange(new FuncionRemovida(funcionId)).apply();
     }
-
 
 
     public Funcion getFuncionById(FuncionId funcionId) {

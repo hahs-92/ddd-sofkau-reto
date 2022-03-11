@@ -12,7 +12,12 @@ public class AgregarNuevaFuncion extends Command {
     private final Prioridad prioridad;
     private final Caracteristica caracteristica;
 
-    public AgregarNuevaFuncion(DirectorId directorId,FuncionId funcionId, Prioridad prioridad, Caracteristica caracteristica) {
+    public AgregarNuevaFuncion(
+            DirectorId directorId,
+            FuncionId funcionId,
+            Prioridad prioridad,
+            Caracteristica caracteristica
+    ) {
         this.directorId = directorId;
         this.funcionId = funcionId;
         this.prioridad = prioridad;
