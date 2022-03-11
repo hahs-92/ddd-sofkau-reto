@@ -4,6 +4,8 @@ import co.com.sofka.domain.generic.EventChange;
 import co.com.webSchoolddd.registro.Director.entity.Funcion;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
 import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
+import co.com.webSchoolddd.registro.Director.event.FuncionRemovida;
+
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
@@ -20,6 +22,7 @@ public class DirectorEventChange extends EventChange {
         } );
 
         apply(getFuncionAgregada(director));
+        apply(getFuncionRemovida(director));
     }
 
     private Consumer<FuncionAgregada> getFuncionAgregada(Director director) {
@@ -31,5 +34,10 @@ public class DirectorEventChange extends EventChange {
             );
             director.funciones.add(funcion);
         };
+    }
+
+    private Consumer<FuncionRemovida> getFuncionRemovida(Director director) {
+        return (FuncionRemovida event ) -> director.funciones
+                .removeIf(f -> f.identity().equals(event.getFuncionId()));
     }
 }

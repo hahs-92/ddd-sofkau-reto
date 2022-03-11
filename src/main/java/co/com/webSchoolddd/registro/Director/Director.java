@@ -5,9 +5,11 @@ import co.com.sofka.domain.generic.DomainEvent;
 import co.com.webSchoolddd.registro.Director.entity.Funcion;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
 import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
+import co.com.webSchoolddd.registro.Director.event.FuncionRemovida;
 import co.com.webSchoolddd.registro.Director.value.*;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Director extends AggregateEvent<DirectorId> {
     protected Nombre nombre;
@@ -50,20 +52,18 @@ public class Director extends AggregateEvent<DirectorId> {
         appendChange(new FuncionAgregada(funcionId, prioridad, caracteristica));
     }
 
-    public void actualizarNombre(Nombre nombre) {
-      //TODO
+    public void removerFuncion(FuncionId funcionId) {
+        Objects.requireNonNull(funcionId, "El id de funcion no puuder ser nulllo");
+        Objects.requireNonNull(getFuncionById(funcionId));
+        appendChange(new FuncionRemovida(funcionId)).apply();
     }
 
-    public void actualizarApellido(Apellido apellido) {
-        //TODO
-    }
 
-    public void actualizarEmail(Email email) {
-       //TODO
-    }
 
-    public void actualizarGenero(Genero genero) {
-       //TODO
+    public Funcion getFuncionById(FuncionId funcionId) {
+        return funciones.stream()
+                .filter(f -> f.identity().equals(funcionId))
+                .findFirst().orElseThrow();
     }
 
 
