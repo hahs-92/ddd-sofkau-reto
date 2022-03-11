@@ -2,7 +2,7 @@ package co.com.webSchoolddd.registro.Escuela;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.webSchoolddd.registro.Director.valor.DirectorId;
+import co.com.webSchoolddd.registro.Director.value.DirectorId;
 import co.com.webSchoolddd.registro.Escuela.entity.Blog;
 import co.com.webSchoolddd.registro.Escuela.entity.Curso;
 import co.com.webSchoolddd.registro.Escuela.entity.Examen;

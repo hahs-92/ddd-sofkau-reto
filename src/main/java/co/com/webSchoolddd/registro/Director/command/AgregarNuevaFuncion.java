@@ -1,10 +1,10 @@
 package co.com.webSchoolddd.registro.Director.command;
 
 import co.com.sofka.domain.generic.Command;
-import co.com.webSchoolddd.registro.Director.valor.Caracteristica;
-import co.com.webSchoolddd.registro.Director.valor.DirectorId;
-import co.com.webSchoolddd.registro.Director.valor.FuncionId;
-import co.com.webSchoolddd.registro.Director.valor.Prioridad;
+import co.com.webSchoolddd.registro.Director.value.Caracteristica;
+import co.com.webSchoolddd.registro.Director.value.DirectorId;
+import co.com.webSchoolddd.registro.Director.value.FuncionId;
+import co.com.webSchoolddd.registro.Director.value.Prioridad;
 
 public class AgregarNuevaFuncion extends Command {
     private final DirectorId directorId;

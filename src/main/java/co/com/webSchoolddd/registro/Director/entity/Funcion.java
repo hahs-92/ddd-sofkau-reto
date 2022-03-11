@@ -1,9 +1,9 @@
 package co.com.webSchoolddd.registro.Director.entity;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.webSchoolddd.registro.Director.valor.Caracteristica;
-import co.com.webSchoolddd.registro.Director.valor.FuncionId;
-import co.com.webSchoolddd.registro.Director.valor.Prioridad;
+import co.com.webSchoolddd.registro.Director.value.Caracteristica;
+import co.com.webSchoolddd.registro.Director.value.FuncionId;
+import co.com.webSchoolddd.registro.Director.value.Prioridad;
 
 public class Funcion extends Entity<FuncionId> {
 

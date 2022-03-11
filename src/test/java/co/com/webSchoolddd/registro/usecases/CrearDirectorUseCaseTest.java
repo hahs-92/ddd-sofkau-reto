@@ -4,7 +4,7 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.webSchoolddd.registro.Director.command.CrearDirector;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
-import co.com.webSchoolddd.registro.Director.valor.*;
+import co.com.webSchoolddd.registro.Director.value.*;
 import co.com.webSchoolddd.useCases.CrearDirectorUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

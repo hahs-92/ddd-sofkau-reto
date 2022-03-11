@@ -5,7 +5,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 import co.com.webSchoolddd.registro.Director.entity.Funcion;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
 import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
-import co.com.webSchoolddd.registro.Director.valor.*;
+import co.com.webSchoolddd.registro.Director.value.*;
 
 import java.util.List;
 

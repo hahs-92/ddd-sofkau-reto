@@ -2,7 +2,7 @@ package co.com.webSchoolddd.registro.usecases;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
-import co.com.webSchoolddd.registro.Director.valor.DirectorId;
+import co.com.webSchoolddd.registro.Director.value.DirectorId;
 import co.com.webSchoolddd.registro.Escuela.command.CrearEscuela;
 import co.com.webSchoolddd.registro.Escuela.entity.Blog;
 import co.com.webSchoolddd.registro.Escuela.entity.Examen;

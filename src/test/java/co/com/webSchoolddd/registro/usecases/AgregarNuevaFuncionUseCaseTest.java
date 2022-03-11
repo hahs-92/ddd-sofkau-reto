@@ -1,18 +1,13 @@
 package co.com.webSchoolddd.registro.usecases;
 
-import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
-import co.com.sofka.business.support.RequestCommand;
 import co.com.webSchoolddd.registro.Director.Director;
 import co.com.webSchoolddd.registro.Director.command.AgregarNuevaFuncion;
-import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
-import co.com.webSchoolddd.registro.Director.valor.*;
+import co.com.webSchoolddd.registro.Director.value.*;
 import co.com.webSchoolddd.useCases.AgregarNuevaFuncionUseCase;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 
 public class AgregarNuevaFuncionUseCaseTest {
 

@@ -1,7 +1,7 @@
 package co.com.webSchoolddd.registro.Escuela.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.webSchoolddd.registro.Director.valor.DirectorId;
+import co.com.webSchoolddd.registro.Director.value.DirectorId;
 import co.com.webSchoolddd.registro.Escuela.entity.Blog;
 import co.com.webSchoolddd.registro.Escuela.entity.Examen;
 import co.com.webSchoolddd.registro.Escuela.valor.Nombre;

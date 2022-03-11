@@ -1,11 +1,10 @@
 package co.com.webSchoolddd.registro.Director.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.webSchoolddd.registro.Director.entity.Funcion;
-import co.com.webSchoolddd.registro.Director.valor.Apellido;
-import co.com.webSchoolddd.registro.Director.valor.Email;
-import co.com.webSchoolddd.registro.Director.valor.Genero;
-import co.com.webSchoolddd.registro.Director.valor.Nombre;
+import co.com.webSchoolddd.registro.Director.value.Apellido;
+import co.com.webSchoolddd.registro.Director.value.Email;
+import co.com.webSchoolddd.registro.Director.value.Genero;
+import co.com.webSchoolddd.registro.Director.value.Nombre;
 
 
 
