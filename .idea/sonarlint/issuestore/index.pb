@@ -3,12 +3,8 @@ u
 Esrc/main/java/co/com/webSchoolddd/registro/Director/valor/Genero.java,8/f/8fba9e744a036c74ac8cb6aeab95578b602b4c42
 }
 Msrc/main/java/co/com/webSchoolddd/registro/Director/valor/Caracteristica.java,d/1/d134d81698ab19666092dbb000304852cbcf7d6d
-x
-Hsrc/main/java/co/com/webSchoolddd/registro/Director/valor/Prioridad.java,4/4/44a40f01423e9421ee621ad84b22114eb310eb19
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-~
-Nsrc/main/java/co/com/webSchoolddd/registro/Director/event/FuncionAgregada.java,d/f/df92212ac54b6f98061e621a5422ed7b22bff397
 x
 Hsrc/main/java/co/com/webSchoolddd/registro/Director/valor/FuncionId.java,6/5/65e5c6e13ebff0650100d76fa0c6858679ebb151
 u
