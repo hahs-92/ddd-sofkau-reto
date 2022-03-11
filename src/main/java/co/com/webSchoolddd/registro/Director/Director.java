@@ -46,8 +46,8 @@ public class Director extends AggregateEvent<DirectorId> {
 
 
     //comportamientos
-    public void agregarFuncion(Funcion funcion) {
-        appendChange(new FuncionAgregada(funcion));
+    public void agregarFuncion(FuncionId funcionId, Prioridad prioridad, Caracteristica caracteristica) {
+        appendChange(new FuncionAgregada(funcionId, prioridad, caracteristica));
     }
 
     public void actualizarNombre(Nombre nombre) {

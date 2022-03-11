@@ -1,12 +1,8 @@
 
 u
 Esrc/main/java/co/com/webSchoolddd/registro/Director/valor/Genero.java,8/f/8fba9e744a036c74ac8cb6aeab95578b602b4c42
-}
-Msrc/main/java/co/com/webSchoolddd/registro/Director/valor/Caracteristica.java,d/1/d134d81698ab19666092dbb000304852cbcf7d6d
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-x
-Hsrc/main/java/co/com/webSchoolddd/registro/Director/valor/FuncionId.java,6/5/65e5c6e13ebff0650100d76fa0c6858679ebb151
 u
 Esrc/main/java/co/com/webSchoolddd/registro/Director/valor/Nombre.java,b/1/b1cc6e81c5e52a9285a2a8c6af2b70419cefdde9
 y
@@ -21,8 +17,6 @@ s
 Csrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Video.java,d/0/d08b7dddfb718e9d4404fbb9a109f6b16ef6321a
 w
 Gsrc/main/java/co/com/webSchoolddd/registro/Director/valor/Apellido.java,9/4/9456c500c2d5c1137ce79cbfb5b31a81536af9c7
-w
-Gsrc/main/java/co/com/webSchoolddd/registro/Director/entity/Funcion.java,5/b/5b2370792b48bee9bda5755f2c4a93ec73ec8b7c
 t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Curso.java,6/9/69cecc7d1e69ad385e25dcfcfe1f443d7dd992f3
 u

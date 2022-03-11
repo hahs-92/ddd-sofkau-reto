@@ -1,9 +1,12 @@
 package co.com.webSchoolddd.registro.Director;
 
 import co.com.sofka.domain.generic.EventChange;
+import co.com.webSchoolddd.registro.Director.entity.Funcion;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
+import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
 
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 public class DirectorEventChange extends EventChange {
     public DirectorEventChange(Director director) {
@@ -15,5 +18,18 @@ public class DirectorEventChange extends EventChange {
             director.genero = event.getGenero();
             director.funciones = new ArrayList<>();
         } );
+
+        apply(getFuncionAgregada(director));
+    }
+
+    private Consumer<FuncionAgregada> getFuncionAgregada(Director director) {
+        return (FuncionAgregada event) -> {
+            var funcion = new Funcion(
+                    event.getFuncionId(),
+                    event.getPrioridad(),
+                    event.getCaracteristica()
+            );
+            director.funciones.add(funcion);
+        };
     }
 }

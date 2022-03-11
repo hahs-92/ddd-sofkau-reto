@@ -9,7 +9,7 @@ public class FuncionId extends Identity {
 
     public FuncionId() {}
 
-    private static FuncionId of(String id) {
+    public static FuncionId of(String id) {
         return  new FuncionId(id);
     }
 }
