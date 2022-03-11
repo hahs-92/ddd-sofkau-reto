@@ -4,6 +4,7 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.webSchoolddd.registro.Director.entity.Funcion;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
+import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
 import co.com.webSchoolddd.registro.Director.valor.*;
 
 import java.util.List;
@@ -43,6 +44,14 @@ public class Director extends AggregateEvent<DirectorId> {
         return director;
     }
 
+
+    //comportamientos
+    public void agregarFuncion(Funcion funcion) {
+        appendChange(new FuncionAgregada(funcion));
+    }
+
+
+    //get
 
     public Nombre nombre() {
         return nombre;
