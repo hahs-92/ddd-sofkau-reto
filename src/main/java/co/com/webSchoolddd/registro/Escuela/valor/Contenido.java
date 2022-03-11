@@ -6,17 +6,16 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Contenido implements ValueObject<Contenido.Props> {
-    private final String publicacion;
+    private final String desarrollo;
     private final Date fecha;
-    private final Author author;
 
-    public Contenido(String publicacion, Date fecha, Author author) {
-        this.publicacion = Objects.requireNonNull(publicacion);
+
+    public Contenido(String desarrollo, Date fecha) {
+        this.desarrollo = Objects.requireNonNull(desarrollo);
         this.fecha = Objects.requireNonNull(fecha);
-        this.author = Objects.requireNonNull(author);
 
-        if(this.publicacion.isBlank()) {
-            throw  new IllegalArgumentException("El campo publicacion es obligatorio");
+        if(this.desarrollo.isBlank()) {
+            throw  new IllegalArgumentException("El campo desarrollo es obligatorio");
         }
     }
 
@@ -24,8 +23,8 @@ public class Contenido implements ValueObject<Contenido.Props> {
     public Props value() {
         return new Props() {
             @Override
-            public String publicacion() {
-                return publicacion;
+            public String desarrollo() {
+                return desarrollo;
             }
 
             @Override
@@ -33,17 +32,12 @@ public class Contenido implements ValueObject<Contenido.Props> {
                 return fecha;
             }
 
-            @Override
-            public Author author() {
-                return author;
-            }
         };
     }
 
 
     public interface Props {
-        String publicacion();
+        String desarrollo();
         Date fecha();
-        Author author();
     }
 }
