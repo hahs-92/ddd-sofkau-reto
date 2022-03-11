@@ -7,8 +7,6 @@ import co.com.webSchoolddd.registro.Director.valor.Email;
 import co.com.webSchoolddd.registro.Director.valor.Genero;
 import co.com.webSchoolddd.registro.Director.valor.Nombre;
 
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class DirectorCreado extends DomainEvent {
