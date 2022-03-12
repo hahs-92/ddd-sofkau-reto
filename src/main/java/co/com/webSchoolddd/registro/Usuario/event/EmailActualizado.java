@@ -7,7 +7,7 @@ public class EmailActualizado extends DomainEvent {
     private final Email email;
 
     public EmailActualizado(Email email) {
-        super("webSchoolddd.registro.director.emailActualizado");
+        super("webSchoolddd.registro.usuario.emailActualizado");
         this.email = email;
     }
 

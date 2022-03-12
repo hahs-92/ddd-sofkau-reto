@@ -23,8 +23,6 @@ w
 Gsrc/main/java/co/com/webSchoolddd/registro/Usuario/value/UsuarioId.java,3/2/32b455d993bbe683e2a56be3cefe5c2d990a3ef1
 {
 Ksrc/main/java/co/com/webSchoolddd/registro/Usuario/event/UsuarioCreado.java,7/0/7034902ea2a5272356ae96b5a19118914eade2a7
-z
-Jsrc/main/java/co/com/webSchoolddd/registro/Usuario/UsuarioEventChange.java,6/0/609226330c8a3634c26ddadaf553bc5f1c0b638a
 |
 Lsrc/main/java/co/com/webSchoolddd/registro/Usuario/command/CrearUsuario.java,b/e/be9997b7861b05208b4b9f498b018e1e95904fde
 s
