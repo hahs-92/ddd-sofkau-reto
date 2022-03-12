@@ -5,6 +5,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 import co.com.webSchoolddd.registro.Cuenta.event.CuentaCreada;
 import co.com.webSchoolddd.registro.Cuenta.valor.CuentaId;
 import co.com.webSchoolddd.registro.Cuenta.valor.Suscripcion;
+import co.com.webSchoolddd.registro.Cuenta.event.SuscripcionCambiada;
 
 
 import java.util.List;
@@ -30,4 +31,13 @@ public class Cuenta extends AggregateEvent<CuentaId> {
     }
 
     //comportamientos
+    public void cambiarSuscripcion(Suscripcion suscripcion) {
+        appendChange(new SuscripcionCambiada(suscripcion));
+    }
+
+    //accesos
+
+    public Suscripcion suscripcion() {
+        return suscripcion;
+    }
 }

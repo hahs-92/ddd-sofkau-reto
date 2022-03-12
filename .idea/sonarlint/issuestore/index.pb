@@ -23,8 +23,6 @@ w
 Gsrc/main/java/co/com/webSchoolddd/registro/Usuario/value/UsuarioId.java,3/2/32b455d993bbe683e2a56be3cefe5c2d990a3ef1
 {
 Ksrc/main/java/co/com/webSchoolddd/registro/Usuario/event/UsuarioCreado.java,7/0/7034902ea2a5272356ae96b5a19118914eade2a7
-o
-?src/main/java/co/com/webSchoolddd/registro/Usuario/Usuario.java,2/1/210618308abb8213a16a1060ccc4fbfe3eabd3d6
 z
 Jsrc/main/java/co/com/webSchoolddd/registro/Usuario/UsuarioEventChange.java,6/0/609226330c8a3634c26ddadaf553bc5f1c0b638a
 |
@@ -49,8 +47,6 @@ u
 Esrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Examen.java,6/f/6fc2cc918fe325575ff62c91f8fe1d81c669a8ad
 }
 Msrc/main/java/co/com/webSchoolddd/registro/Director/event/DirectorCreado.java,e/9/e9f2efe075ec3d013f07d4a0d24289ba62c068b1
-x
-Hsrc/main/java/co/com/webSchoolddd/registro/Cuenta/CuentaEventChange.java,b/d/bdacc0c0e12e08aefb8a0764c914e99f20b7e594
 r
 Bsrc/main/java/co/com/webSchoolddd/useCases/CrearCuentaUseCase.java,0/f/0f1272e78c280396ec1e05a61a2fc2a39c6a89ab
 t

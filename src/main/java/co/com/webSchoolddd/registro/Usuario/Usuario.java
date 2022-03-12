@@ -53,6 +53,8 @@ public class Usuario extends AggregateEvent<UsuarioId> {
         return usuario;
     }
 
+    //comportamientos
+
 
     //accesos
 
