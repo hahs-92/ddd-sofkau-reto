@@ -9,7 +9,7 @@ public class BlogId extends Identity {
 
     public BlogId() {}
 
-    private static BlogId of(String id) {
+    public static BlogId of(String id) {
         return new BlogId(id);
     }
 }
