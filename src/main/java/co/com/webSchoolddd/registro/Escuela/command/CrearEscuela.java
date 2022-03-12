@@ -11,20 +11,14 @@ public class CrearEscuela extends Command {
     private final EscuelaId escuelaId;
     private final Nombre nombre;
     private final DirectorId directorId;
-    private final Examen examen;
-    private final Blog blog;
 
     public CrearEscuela(EscuelaId escuelaId,
                         Nombre nombre,
-                        DirectorId directorId,
-                        Examen examen,
-                        Blog blog
+                        DirectorId directorId
     ) {
         this.escuelaId = escuelaId;
         this.nombre = nombre;
         this.directorId = directorId;
-        this.examen = examen;
-        this.blog = blog;
     }
 
     public EscuelaId getEscuelaId() {
@@ -39,11 +33,4 @@ public class CrearEscuela extends Command {
         return directorId;
     }
 
-    public Examen getExamen() {
-        return examen;
-    }
-
-    public Blog getBlog() {
-        return blog;
-    }
 }

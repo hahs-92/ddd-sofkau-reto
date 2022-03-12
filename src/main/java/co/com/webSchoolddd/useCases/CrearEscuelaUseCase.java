@@ -15,9 +15,7 @@ public class CrearEscuelaUseCase extends UseCase<RequestCommand<CrearEscuela>, R
         var escuela = new Escuela(
                 command.getEscuelaId(),
                 command.getDirectorId(),
-                command.getNombre(),
-                command.getBlog(),
-                command.getExamen()
+                command.getNombre()
         );
         emit().onResponse(new ResponseEvents(escuela.getUncommittedChanges()));
     }

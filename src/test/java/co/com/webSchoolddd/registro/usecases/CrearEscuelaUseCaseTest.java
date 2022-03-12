@@ -24,31 +24,13 @@ public class CrearEscuelaUseCaseTest {
         EscuelaId escuelaId =  new EscuelaId();
         DirectorId directorId = DirectorId.of("666XD");
         Nombre nombre = new Nombre("Desarrollo Web");
-        BlogId blogId = new BlogId();
-        Date fecha = new Date();
-        Contenido contenido = new Contenido("Introduccion al desarrollo", fecha);
-        Author author = new Author("miDudev","midudev@email.com");
-        Blog blog = new Blog(
-                blogId,
-                contenido,
-                author
-        );
-        ExamenId examenId = new ExamenId();
-        author = new Author("Raul", "raul@mail.com");
-        contenido = new Contenido("Que es Redux?", fecha);
-        Examen examen = new Examen(
-                examenId,
-                author,
-                contenido
-        );
+
 
         //act
         var command = new CrearEscuela(
                 escuelaId,
                 nombre,
-                directorId,
-                examen,
-                blog
+                directorId
         );
         var usecase = new CrearEscuelaUseCase();
 

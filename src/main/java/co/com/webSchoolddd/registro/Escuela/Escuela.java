@@ -24,16 +24,12 @@ public class Escuela extends AggregateEvent<EscuelaId> {
     public Escuela(
             EscuelaId entityId,
             DirectorId directorId,
-            Nombre nombre,
-            Blog blog,
-            Examen examen
+            Nombre nombre
     ) {
         super(entityId);
         appendChange(new EscuelaCreada(
                 nombre,
-                directorId,
-                examen,
-                blog
+                directorId
         )).apply();
         subscribe(new EscuelaEventChange(this));
     }
