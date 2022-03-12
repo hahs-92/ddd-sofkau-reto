@@ -15,10 +15,6 @@ x
 Hsrc/main/java/co/com/webSchoolddd/registro/Director/value/FuncionId.java,0/4/04e57542fc0f16efe2a6130124f75f4df34d33eb
 
 Osrc/test/java/co/com/webSchoolddd/registro/usecases/CrearCuentaUseCaseTest.java,a/1/a11f2d8209aace4bd01c944809d50937d4c82b2d
-v
-Fsrc/main/java/co/com/webSchoolddd/useCases/EliminarFuncionUseCase.java,b/f/bfaf4eb0ad7d309a9a4bbe487e069ca63693ea03
-ƒ
-Ssrc/test/java/co/com/webSchoolddd/registro/usecases/EliminarFuncionUseCaseTest.java,8/a/8a7cc891f80f8135bbeb1ed19234d5d509bbf04f
 e
 5src/main/java/co/com/webSchoolddd/value/Apellido.java,e/2/e274adbc5554756eea4bddaac4e54ccb7d3b1297
 b
