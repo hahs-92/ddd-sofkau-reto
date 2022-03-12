@@ -32,7 +32,7 @@ public class Cuenta extends AggregateEvent<CuentaId> {
 
     //comportamientos
     public void cambiarSuscripcion(Suscripcion suscripcion) {
-        appendChange(new SuscripcionCambiada(suscripcion));
+        appendChange(new SuscripcionCambiada(suscripcion)).apply();
     }
 
     //accesos

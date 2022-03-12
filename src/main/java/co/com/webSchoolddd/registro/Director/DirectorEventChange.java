@@ -3,8 +3,10 @@ package co.com.webSchoolddd.registro.Director;
 import co.com.sofka.domain.generic.EventChange;
 import co.com.webSchoolddd.registro.Director.entity.Funcion;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
+import co.com.webSchoolddd.registro.Director.event.EmailActualizado;
 import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
 import co.com.webSchoolddd.registro.Director.event.FuncionRemovida;
+import co.com.webSchoolddd.value.Email;
 
 
 import java.util.ArrayList;
@@ -23,6 +25,10 @@ public class DirectorEventChange extends EventChange {
 
         apply(getFuncionAgregada(director));
         apply(getFuncionRemovida(director));
+
+        apply((EmailActualizado event ) -> {
+            director.email = event.getEmail();
+        });
     }
 
     private Consumer<FuncionAgregada> getFuncionAgregada(Director director) {

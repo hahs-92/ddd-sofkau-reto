@@ -4,6 +4,7 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.webSchoolddd.registro.Director.entity.Funcion;
 import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
+import co.com.webSchoolddd.registro.Director.event.EmailActualizado;
 import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
 import co.com.webSchoolddd.registro.Director.event.FuncionRemovida;
 import co.com.webSchoolddd.registro.Director.value.*;
@@ -68,6 +69,11 @@ public class Director extends AggregateEvent<DirectorId> {
         return funciones.stream()
                 .filter(f -> f.identity().equals(funcionId))
                 .findFirst().orElseThrow();
+    }
+
+
+    public void cambiarEmail(Email email) {
+        appendChange(new EmailActualizado(email)).apply();
     }
 
 

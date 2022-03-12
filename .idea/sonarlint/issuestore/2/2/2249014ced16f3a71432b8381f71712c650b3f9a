@@ -1,0 +1,6 @@
+
+o
+java:S1128"MRemove this unused import 'co.com.webSchoolddd.registro.Escuela.entity.Blog'.(«Πƒ±ÿÿÿÿÿ8τƒέχ/
+q
+java:S1128"ORemove this unused import 'co.com.webSchoolddd.registro.Escuela.entity.Examen'.(”χ¶ϋÿÿÿÿ8τƒέχ/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ιό“΅ωÿÿÿÿ

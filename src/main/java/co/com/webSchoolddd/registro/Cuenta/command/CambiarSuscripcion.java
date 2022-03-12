@@ -4,13 +4,13 @@ import co.com.sofka.domain.generic.Command;
 import co.com.webSchoolddd.registro.Cuenta.valor.Suscripcion;
 
 public class CambiarSuscripcion extends Command {
-    private final Suscripcion.SuscripcionType suscripcion;
+    private final Suscripcion suscripcion;
 
-    public CambiarSuscripcion(Suscripcion.SuscripcionType suscripcion) {
+    public CambiarSuscripcion(Suscripcion suscripcion) {
         this.suscripcion = suscripcion;
     }
 
-    public Suscripcion.SuscripcionType getSuscripcion() {
+    public Suscripcion getSuscripcion() {
         return suscripcion;
     }
 }
