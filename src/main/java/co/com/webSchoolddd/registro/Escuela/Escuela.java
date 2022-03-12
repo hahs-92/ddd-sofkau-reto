@@ -7,13 +7,11 @@ import co.com.webSchoolddd.registro.Escuela.entity.Blog;
 import co.com.webSchoolddd.registro.Escuela.entity.Curso;
 import co.com.webSchoolddd.registro.Escuela.entity.Examen;
 import co.com.webSchoolddd.registro.Escuela.entity.Reto;
-import co.com.webSchoolddd.registro.Escuela.event.BlogAsignado;
-import co.com.webSchoolddd.registro.Escuela.event.CursoAgregado;
-import co.com.webSchoolddd.registro.Escuela.event.EscuelaCreada;
-import co.com.webSchoolddd.registro.Escuela.event.ExamenAsignado;
+import co.com.webSchoolddd.registro.Escuela.event.*;
 import co.com.webSchoolddd.registro.Escuela.valor.*;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Escuela extends AggregateEvent<EscuelaId> {
     protected DirectorId directorId;
@@ -65,6 +63,13 @@ public class Escuela extends AggregateEvent<EscuelaId> {
             Author author
     ) {
         appendChange(new CursoAgregado(cursoId, nombre, descripcion, video, author)).apply();
+    }
+
+    public void removerCurso(CursoId  cursoId) {
+        Objects.requireNonNull(cursoId, "CursoId no puede ser nullo");
+        Objects.requireNonNull(getCursoById(cursoId));
+
+        appendChange(new CursoRemovido(cursoId)).apply();
     }
 
     public Curso getCursoById(CursoId cursoId) {

@@ -4,10 +4,7 @@ import co.com.sofka.domain.generic.EventChange;
 import co.com.webSchoolddd.registro.Escuela.entity.Blog;
 import co.com.webSchoolddd.registro.Escuela.entity.Curso;
 import co.com.webSchoolddd.registro.Escuela.entity.Examen;
-import co.com.webSchoolddd.registro.Escuela.event.BlogAsignado;
-import co.com.webSchoolddd.registro.Escuela.event.CursoAgregado;
-import co.com.webSchoolddd.registro.Escuela.event.EscuelaCreada;
-import co.com.webSchoolddd.registro.Escuela.event.ExamenAsignado;
+import co.com.webSchoolddd.registro.Escuela.event.*;
 
 
 import java.util.ArrayList;
@@ -41,5 +38,8 @@ public class EscuelaEventChange  extends EventChange {
             );
             escuela.cursos.add(curso);
         });
+
+        apply((CursoRemovido event) -> escuela.cursos
+                .removeIf(c -> c.identity().equals(event.getCursoId())));
     }
 }
