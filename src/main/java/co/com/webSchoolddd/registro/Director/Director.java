@@ -77,7 +77,6 @@ public class Director extends AggregateEvent<DirectorId> {
     }
 
 
-    //get
 
     public Nombre nombre() {
         return nombre;

@@ -129,10 +129,6 @@ Psrc/test/java/co/com/webSchoolddd/registro/usecases/RemoverCursoUseCaseTest.jav
 Tsrc/test/java/co/com/webSchoolddd/registro/usecases/AgregarNuevoRetoUseCaseTest.java,3/1/3103c630b85d5475c6f1e40638fd6ac3f9238ada
 
 Osrc/test/java/co/com/webSchoolddd/registro/usecases/RemoverRetoUseCaseTest.java,8/2/8277896ad0d800fc2645cad6128378970835bbb4
-o
-?src/main/java/co/com/webSchoolddd/registro/Usuario/Usuario.java,2/1/210618308abb8213a16a1060ccc4fbfe3eabd3d6
-o
-?src/main/java/co/com/webSchoolddd/registro/Escuela/Escuela.java,f/5/f559f2e1c226665f76d6e826956b1c54cb813938
 x
 Hsrc/main/java/co/com/webSchoolddd/registro/Cuenta/valor/Suscripcion.java,9/0/901edd9fd83fd12df74ac16389e4c29f456594bc
 {

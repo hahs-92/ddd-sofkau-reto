@@ -4,6 +4,7 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.webSchoolddd.registro.Cuenta.valor.CuentaId;
 import co.com.webSchoolddd.registro.Escuela.valor.EscuelaId;
+import co.com.webSchoolddd.registro.Usuario.event.EmailActualizado;
 import co.com.webSchoolddd.registro.Usuario.event.UsuarioCreado;
 import co.com.webSchoolddd.registro.Usuario.value.UsuarioId;
 import co.com.webSchoolddd.value.Apellido;
@@ -55,6 +56,9 @@ public class Usuario extends AggregateEvent<UsuarioId> {
 
     //comportamientos
 
+    public void actualizarEmail(Email email) {
+        appendChange(new EmailActualizado(email)).apply();
+    }
 
     //accesos
 
