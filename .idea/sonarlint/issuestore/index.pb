@@ -7,8 +7,6 @@ t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Nombre.java,7/e/7e42762332f431a25e9151598b210d295c5f92a9
 s
 Csrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Video.java,d/0/d08b7dddfb718e9d4404fbb9a109f6b16ef6321a
-u
-Esrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/CursoId.java,0/c/0cd45b61431909e1641b7b995edf1b4d767a52c2
 t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/RetoId.java,e/5/e57dc5fbc2cdec1e690292cf6f31306b165e04d6
 s
@@ -69,12 +67,8 @@ r
 Bsrc/main/java/co/com/webSchoolddd/useCases/CrearCuentaUseCase.java,0/f/0f1272e78c280396ec1e05a61a2fc2a39c6a89ab
 t
 Dsrc/main/java/co/com/webSchoolddd/useCases/CrearDirectorUseCase.java,3/f/3f1ea82365d96c313ab39e74ebfcce253685514f
-z
-Jsrc/main/java/co/com/webSchoolddd/useCases/AgregarNuevaFuncionUseCase.java,e/c/ec8ea38d09f127b79ce38295ededad039a0ca85d
 v
 Fsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/ExamenId.java,e/4/e438ce01e8db20b04700e1c391268a7ee98e30b9
-‡
-Wsrc/test/java/co/com/webSchoolddd/registro/usecases/AgregarNuevaFuncionUseCaseTest.java,4/c/4c7fe8ca42e5ca5017b7d2340784c6e042823612
 s
 Csrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Blog.java,e/7/e77a2fabec2d3144b7e2265fcde35e4d8e492e68
 |

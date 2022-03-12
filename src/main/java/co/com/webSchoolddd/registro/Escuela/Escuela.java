@@ -8,6 +8,7 @@ import co.com.webSchoolddd.registro.Escuela.entity.Curso;
 import co.com.webSchoolddd.registro.Escuela.entity.Examen;
 import co.com.webSchoolddd.registro.Escuela.entity.Reto;
 import co.com.webSchoolddd.registro.Escuela.event.BlogAsignado;
+import co.com.webSchoolddd.registro.Escuela.event.CursoAgregado;
 import co.com.webSchoolddd.registro.Escuela.event.EscuelaCreada;
 import co.com.webSchoolddd.registro.Escuela.event.ExamenAsignado;
 import co.com.webSchoolddd.registro.Escuela.valor.*;
@@ -56,8 +57,14 @@ public class Escuela extends AggregateEvent<EscuelaId> {
         appendChange(new BlogAsignado(blogId, contenido, author)).apply();
     }
 
-    public void agregarCurso() {
-
+    public void agregarCurso(
+            CursoId cursoId,
+            Nombre nombre,
+            Descripcion descripcion,
+            Video video,
+            Author author
+    ) {
+        appendChange(new CursoAgregado(cursoId, nombre, descripcion, video, author)).apply();
     }
 
     public Curso getCursoById(CursoId cursoId) {

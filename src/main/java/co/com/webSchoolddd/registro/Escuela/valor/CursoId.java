@@ -10,7 +10,7 @@ public class CursoId  extends Identity {
 
     public CursoId() {}
 
-    private static CursoId of(String id) {
+    public static CursoId of(String id) {
         return new CursoId(id);
     }
 }
