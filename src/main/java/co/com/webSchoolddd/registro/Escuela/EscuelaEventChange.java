@@ -1,7 +1,9 @@
 package co.com.webSchoolddd.registro.Escuela;
 
 import co.com.sofka.domain.generic.EventChange;
+import co.com.webSchoolddd.registro.Escuela.entity.Blog;
 import co.com.webSchoolddd.registro.Escuela.entity.Examen;
+import co.com.webSchoolddd.registro.Escuela.event.BlogAsignado;
 import co.com.webSchoolddd.registro.Escuela.event.EscuelaCreada;
 import co.com.webSchoolddd.registro.Escuela.event.ExamenAsignado;
 
@@ -21,6 +23,10 @@ public class EscuelaEventChange  extends EventChange {
 
         apply((ExamenAsignado event) -> {
             escuela.examen = new Examen(  event.getExamenId(), event.getAuthor(), event.getContenido());
+        });
+
+        apply((BlogAsignado event) -> {
+            escuela.blog = new Blog(event.getBlogId(), event.getContenido(), event.getAuthor());
         });
     }
 }
