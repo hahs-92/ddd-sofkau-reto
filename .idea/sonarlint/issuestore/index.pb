@@ -7,8 +7,6 @@ t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Nombre.java,7/e/7e42762332f431a25e9151598b210d295c5f92a9
 s
 Csrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Video.java,d/0/d08b7dddfb718e9d4404fbb9a109f6b16ef6321a
-t
-Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/RetoId.java,e/5/e57dc5fbc2cdec1e690292cf6f31306b165e04d6
 x
 Hsrc/main/java/co/com/webSchoolddd/registro/Director/value/FuncionId.java,0/4/04e57542fc0f16efe2a6130124f75f4df34d33eb
 

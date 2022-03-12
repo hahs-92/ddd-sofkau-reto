@@ -6,7 +6,7 @@ import co.com.sofka.business.support.ResponseEvents;
 import co.com.webSchoolddd.registro.Director.command.AgregarNuevaFuncion;
 import co.com.webSchoolddd.registro.Escuela.Escuela;
 import co.com.webSchoolddd.registro.Escuela.command.AgregarNuevoCurso;
-import co.com.webSchoolddd.registro.Escuela.valor.EscuelaId;
+
 
 public class AgregarNuevoCursoUseCase extends UseCase<RequestCommand<AgregarNuevoCurso>, ResponseEvents> {
 

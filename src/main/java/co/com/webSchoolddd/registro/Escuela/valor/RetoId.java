@@ -10,7 +10,7 @@ public class RetoId extends Identity {
 
     public RetoId() {}
 
-    private static RetoId of(String id) {
+    public static RetoId of(String id) {
         return new RetoId(id);
     }
 }
