@@ -7,7 +7,7 @@ import co.com.webSchoolddd.registro.Escuela.entity.Examen;
 import co.com.webSchoolddd.registro.Escuela.valor.Nombre;
 
 
-
+// TODO: 11/03/22 no puedo pasar entidades en los eventos 
 public class EscuelaCreada extends DomainEvent {
     private final Nombre nombre;
     private final DirectorId directorId;
