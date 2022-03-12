@@ -2,6 +2,10 @@ package co.com.webSchoolddd.registro.Director.command;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.webSchoolddd.registro.Director.value.*;
+import co.com.webSchoolddd.value.Apellido;
+import co.com.webSchoolddd.value.Email;
+import co.com.webSchoolddd.value.Genero;
+import co.com.webSchoolddd.value.Nombre;
 
 public class CrearDirector extends Command {
     private final DirectorId directorId;

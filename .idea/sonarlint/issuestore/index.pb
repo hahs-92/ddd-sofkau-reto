@@ -21,8 +21,6 @@ t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Curso.java,6/9/69cecc7d1e69ad385e25dcfcfe1f443d7dd992f3
 u
 Esrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/CursoId.java,0/c/0cd45b61431909e1641b7b995edf1b4d767a52c2
-t
-Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/BlogId.java,1/9/1977b0d4cdc91c8caf42dcfb09a5e3c77ea1ab4b
 u
 Esrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Examen.java,6/f/6fc2cc918fe325575ff62c91f8fe1d81c669a8ad
 w

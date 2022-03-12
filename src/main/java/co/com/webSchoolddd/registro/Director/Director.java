@@ -7,6 +7,10 @@ import co.com.webSchoolddd.registro.Director.event.DirectorCreado;
 import co.com.webSchoolddd.registro.Director.event.FuncionAgregada;
 import co.com.webSchoolddd.registro.Director.event.FuncionRemovida;
 import co.com.webSchoolddd.registro.Director.value.*;
+import co.com.webSchoolddd.value.Apellido;
+import co.com.webSchoolddd.value.Email;
+import co.com.webSchoolddd.value.Genero;
+import co.com.webSchoolddd.value.Nombre;
 
 import java.util.List;
 import java.util.Objects;

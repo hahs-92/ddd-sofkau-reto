@@ -1,4 +1,4 @@
-package co.com.webSchoolddd.registro.Director.value;
+package co.com.webSchoolddd.value;
 
 import co.com.sofka.domain.generic.ValueObject;
 
