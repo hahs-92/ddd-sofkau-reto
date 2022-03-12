@@ -56,6 +56,16 @@ public class Escuela extends AggregateEvent<EscuelaId> {
         appendChange(new BlogAsignado(blogId, contenido, author)).apply();
     }
 
+    public void agregarCurso() {
+
+    }
+
+    public Curso getCursoById(CursoId cursoId) {
+        return cursos.stream()
+                .filter(c -> c.identity().equals(cursoId))
+                .findFirst().orElseThrow();
+    }
+
     //accesos
 
     public DirectorId directorId() {
