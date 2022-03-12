@@ -11,8 +11,6 @@ t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Nombre.java,7/e/7e42762332f431a25e9151598b210d295c5f92a9
 t
 Dsrc/main/java/co/com/webSchoolddd/registro/Director/valor/Email.java,1/a/1a2747269a4ffb1b4e664b327e9c29faae969f54
-t
-Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Author.java,c/6/c630ce4bd1d552f4e0db17b4c2b831ee7b835f29
 s
 Csrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Video.java,d/0/d08b7dddfb718e9d4404fbb9a109f6b16ef6321a
 w
@@ -21,10 +19,6 @@ t
 Dsrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Curso.java,6/9/69cecc7d1e69ad385e25dcfcfe1f443d7dd992f3
 u
 Esrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/CursoId.java,0/c/0cd45b61431909e1641b7b995edf1b4d767a52c2
-u
-Esrc/main/java/co/com/webSchoolddd/registro/Escuela/entity/Examen.java,6/f/6fc2cc918fe325575ff62c91f8fe1d81c669a8ad
-w
-Gsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/Contenido.java,a/7/a75e1f4f22f6a43e143893009446821b6c383098
 v
 Fsrc/main/java/co/com/webSchoolddd/registro/Escuela/valor/ExamenId.java,e/4/e438ce01e8db20b04700e1c391268a7ee98e30b9
 t
