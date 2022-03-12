@@ -76,9 +76,22 @@ public class Escuela extends AggregateEvent<EscuelaId> {
         appendChange(new CursoRemovido(cursoId)).apply();
     }
 
+    public void removerReto(RetoId retoId) {
+        Objects.requireNonNull(retoId, "RetoId no puede ser Nullo");
+        Objects.requireNonNull(getRetoById(retoId));
+
+        appendChange(new RetoRemovido(retoId));
+    }
+
     public Curso getCursoById(CursoId cursoId) {
         return cursos.stream()
                 .filter(c -> c.identity().equals(cursoId))
+                .findFirst().orElseThrow();
+    }
+
+    public Reto getRetoById(RetoId retoId) {
+        return retos.stream()
+                .filter(r-> r.identity().equals(retoId))
                 .findFirst().orElseThrow();
     }
 

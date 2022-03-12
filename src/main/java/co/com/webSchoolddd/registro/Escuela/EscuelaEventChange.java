@@ -41,7 +41,8 @@ public class EscuelaEventChange  extends EventChange {
         });
 
         apply((CursoRemovido event) -> escuela.cursos
-                .removeIf(c -> c.identity().equals(event.getCursoId())));
+                .removeIf(c -> c.identity().equals(event.getCursoId()))
+        );
 
         apply((RetoAgregado event) -> {
             var reto = new Reto(
@@ -52,5 +53,9 @@ public class EscuelaEventChange  extends EventChange {
             );
             escuela.retos.add(reto);
         });
+
+        apply((RetoRemovido event) -> escuela.retos
+                .removeIf(r -> r.identity().equals(event.getRetoId()))
+        );
     }
 }
