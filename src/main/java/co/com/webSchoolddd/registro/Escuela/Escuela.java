@@ -55,6 +55,10 @@ public class Escuela extends AggregateEvent<EscuelaId> {
         appendChange(new BlogAsignado(blogId, contenido, author)).apply();
     }
 
+    public void agregarReto(RetoId retoId, Author author, Contenido contenido, Descripcion descripcion) {
+        appendChange(new RetoAgregado(retoId, author,contenido,descripcion ));
+    }
+
     public void agregarCurso(
             CursoId cursoId,
             Nombre nombre,
