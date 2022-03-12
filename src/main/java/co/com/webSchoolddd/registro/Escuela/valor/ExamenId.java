@@ -9,7 +9,7 @@ public class ExamenId extends Identity {
 
     public ExamenId() {}
 
-    private static ExamenId of(String id) {
+    public static ExamenId of(String id) {
         return new ExamenId(id);
     }
 }
